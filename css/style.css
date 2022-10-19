@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@500&display=swap');
+
+:root {
+    --ff-Inter: 'Inter', sans-serif;
+    --ff-karla: 'Karla', sans-serif;
+    --fs-700: 2rem;
+    --fs-400: 1.2rem;
+    --fs-300: 1rem;
+    --fw-700: 700;
+    --fw-400: 400;
+    --cls-bg: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7));
+    --cls-form-bg: rgba(27, 27, 50, 0.8);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ------------------- */
+/* Custom Styles */
+/* ------------------- */
+
+.fs-700 {
+    font-size: var(--fs-700);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+
+.bg-body {
+    background: var(--cls-bg);
+}
+
+.bg-form {
+    background: var(--cls-form-bg)
+}
+
+.ff-karla {
+    font-family: var(--ff-karla);
+}
+.ff-Inter{
+    font-family: var(--ff-Inter);
+}
+.text-align{
+    text-align: center;
+}
+.container{
+    max-width: 60em;
+    margin-inline: auto;
+    padding: 1.5em;
+    border-radius: 12px;
+    color: white;
+    margin-top: 30px;
+}
+input{
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+input[type="submit"]{
+    width: 100%;
+    min-height: 2.5em;
+    background: var(--cls-bg);
+    border: none;
+    outline: none;
+}
+input[type="email"],input[type="text"],input[type="number"]{
+    margin-left: 2em;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 12px 8px;
+    min-width: 0.5em;
+}
