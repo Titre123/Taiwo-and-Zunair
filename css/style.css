@@ -8,7 +8,7 @@
     --fs-300: 1rem;
     --fw-700: 700;
     --fw-400: 400;
-    --cls-bg: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7));
+    --cls-bg: #eee;
     --cls-form-bg: rgba(27, 27, 50, 0.8);
 }
 
@@ -34,7 +34,7 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
+ul,
 ol[role='list'] {
     list-style: none;
 }
@@ -49,11 +49,13 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: var(--cls-bg);
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 /* Make images easier to work with */
@@ -133,7 +135,7 @@ select {
     margin-inline: auto;
     padding: 1.5em;
     border-radius: 12px;
-    color: white;
+    color: #000;
     margin-top: 30px;
 }
 input{
@@ -148,11 +150,12 @@ textarea{
     outline: none;
 }
 input[type="submit"]{
-    width: 100%;
+    width: 10%;
     min-height: 2.5em;
-    background: var(--cls-bg);
+    background: #F1C40F;
     border: none;
     outline: none;
+    color: #000;
 }
 input[type="email"],input[type="text"],input[type="number"]{
     margin-left: 2em;
@@ -160,4 +163,28 @@ input[type="email"],input[type="text"],input[type="number"]{
     margin-bottom: 20px;
     padding: 12px 8px;
     min-width: 0.5em;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gap{
+    gap: 3.5em;
+}
+
+#header-img{
+    width: 20%;
+}
+
+.mb-2{
+    margin: 2em;
+}
+
+@media (max-width: 700px) {
+    .flex{
+        flex-direction: column;
+    }
 }

@@ -10,11 +10,11 @@
   <body class="bg-body">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <main>
-      <header id="header">
+      <header id="header" class="flex">
         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
           alt="Original Trombone logo" id="header-img">
         <nav id="nav-bar">
-          <ul>
+          <ul class="flex gap">
             <li><a href="#header" class="nav-link">Features</a></li>
             <li><a href="#video" class="nav-link">How It Works</a></li>
             <li><a href="#email" class="nav-link">Pricing</a></li>
@@ -27,25 +27,28 @@
           <a href="https://www.freecodecamp.com/email-submit"><input type="submit" value="submit" id="submit" /></a>
         </form>
         <div class="info">
-          <div>
+          <div class="mb-2">
             <h2>Premium Materials</h2>
             <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
               purchase.</p>
           </div>
-          <div>
+          <div class="mb-2">
             <h2>Fast Shipping</h2>
             <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if
               you are not satisfied.</p>
           </div>
-          <div>
+          <div class="mb-2">
             <h2>Quality Assurance</h2>
             <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
               pitch of your instrument.</p>
           </div>
         </div>
+        <iframe width="529" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+          title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="vide"
+          allowfullscreen></iframe>
       </div>
     </main>
-    <iframe id="video" src=""></iframe>
     <script  src="js/index.js"></script>
   </body>
 </html>
